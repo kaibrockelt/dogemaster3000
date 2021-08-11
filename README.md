@@ -18,7 +18,7 @@ Every action gets logged, so you can analyse what happened.
 
 ## what does it not do?
 actual trades.
-i did not intend to write this code to gamble, but to learn.
+i did not intend to write this code to gamble, but to learn. also, i though it would be a dumb idea to publish code that can burn uncareful people's money. Guess who would get the blame.
 but a trade actually is only 2 api calls away. place an order and check its status. 
 if you need that, i guess you know what to do.
 
@@ -63,4 +63,5 @@ add or remove as many bots from the config as you like.
 i recomend to keep the holding bots in for easy comparison.
 
 you can tweak some configs, like the default assets directly in the index.js file. also you should add your kraken api credentials.
+
 
