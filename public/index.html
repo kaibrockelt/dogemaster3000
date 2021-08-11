@@ -1,0 +1,162 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+#overview{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0vw;
+}
+
+h2{
+    margin: 0;
+    background: #333;
+    padding: 5px 10px;
+    color: fff;
+    font-size: 14px;
+}
+p.have {
+    background: #f0f0f0;
+}
+p.have.cash {
+    background: #ddddf0;
+}
+p.have.crypto {
+    background: #fdfdde;
+}
+
+p {
+    font-size: 14px;
+    margin: 0;
+    padding: 8px;
+}
+h2.red {
+    background: #aa0000;
+}
+h2.green{
+    background: #00aa00;
+}
+
+.card{
+    border: 1px solid #666;
+    border-radius: 5px;
+    width: 90%;
+    position: relative;
+
+}
+.goright{
+position: absolute;
+display: inline-block;
+right: 5
+
+;}
+
+
+/*High and low*/
+
+.bar {
+    width: 100%;
+    background: #ccc;
+    background: linear-gradient(90deg, rgba(210,0,0,1) 0%, rgba(210,0,0,1) 50%, rgba(114,217,104,1) 50%, rgba(0,210,0,1) 100%);
+    height: 5px;
+    position: relative;
+}
+.indicator {
+    display: block;
+    width: 0px;
+    height: 20px;
+    background: #ccc;
+    border: 1px solid #666;
+    border-radius: 100%;
+    position: absolute;
+    top: -9px;
+}
+
+.iprice{
+
+    position: relative;
+    display: block;
+    top: -16px;
+    font-size: .8em;
+    left: -20px;
+}
+
+.left {
+float: left;}
+
+.right{
+float: right;}
+#meta{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#meta table{
+    width: 100%;
+}
+td.coinname{
+
+    width: 10%;
+
+}
+td{
+text-align: center;}
+td.datafield {
+    width: 20%;
+    padding: 30px;
+}
+@media screen and (min-width: 800px){
+    .card{
+        width: 19%;
+        margin: 5px .4%;
+    }
+}
+
+div#modal{
+display: none;
+}
+div#modal, div#background {
+    position: fixed;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+div#background{
+background: rgba(0.3, 0.3, 0.3, 0.5);
+backdrop-filter: blur(5px);
+}
+
+div#logbook {
+    background: #f0f0f0;
+    width: 60vw;
+    margin: 5vh auto;
+    padding: 40px;
+    overflow: scroll;
+    max-height: 90vh;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Dogemaster3000</h1>
+<div id="modal">
+    <div id="background"><div id="logbook"></div></div>
+    
+</div>
+<div id="overview"></div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
